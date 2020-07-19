@@ -1,0 +1,991 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background: rgb(0, 0, 0)
+}
+
+.border_body {
+    width: 100%;
+    height: 100vh;
+}
+
+.border-dimention {
+    width: 100%;
+}
+
+.border-dimention h1 {
+    color: white;
+}
+
+.startup {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    box-shadow: 2px 2px 50px;
+}
+
+.box {
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.box video {
+    position: absolute;
+    width: 100%;
+}
+
+.box h3 {
+    width: 100%;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    line-height: 50vh;
+    text-align: center;
+    mix-blend-mode: screen;
+    color: #000;
+    font-size: 15vw;
+}
+
+.box1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: rgb(163, 63, 63);
+    padding-bottom: 40px;
+}
+
+.box1 .box1-1 {
+    width: 30%;
+    height: auto;
+    margin: 30px 30px 0 30px;
+    box-shadow: 2px 2px 50px;
+    background: rgb(0, 0, 0);
+}
+
+.box1-1 img {
+    width: 100%;
+}
+
+.box1-1 p {
+    color: white;
+    margin: 20px 20px 30px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+
+.box1 .box1-2 {
+    width: 30%;
+    height: auto;
+    margin: 30px 30px 0 30px;
+    box-shadow: 2px 2px 50px;
+    background: rgb(248, 229, 229);
+}
+
+.box1-2 img {
+    width: 100%;
+    background: black;
+}
+
+.box1-2 p {
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    margin: 15px 20px 0 30px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.box1 .box1-3 {
+    width: 30%;
+    height: auto;
+    margin: 30px 30px 0 30px;
+    box-shadow: 2px 2px 50px;
+    background-color: rgb(175, 170, 148);
+}
+
+.box1-3 img {
+    width: 100%;
+}
+
+.box1-3 p {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-size: 40px;
+    margin: 15px 20px 0 30px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.card {
+    width: 100%;
+    height: auto;
+    padding: 5vh 0 6vh 0;
+    background: rgba(255, 251, 251, 0.952);
+}
+
+.inner-card {
+    width: 90%;
+    margin: 0 5% 0 5%;
+    display: flex;
+    box-shadow: 2px 5px 15px;
+    background-color: rgb(223, 223, 223);
+}
+
+.inner-card img {
+    width: 20%;
+}
+
+.inner-card p {
+    text-align: center;
+    margin: 20vh 60px 20vh 60px;
+    font-size: 20px;
+}
+
+
+/* square*/
+
+.coocoo {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    margin-bottom: 150px;
+}
+
+.square {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 100px 5% 30px 10%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.square span:nth-child(1) {
+    position: absolute;
+    ;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 30% 62% 63% 90% /41% 44% 56% 59%;
+    animation: animate 6s linear infinite;
+}
+
+.square:hover span:nth-child(1) {
+    background: red;
+    border: none;
+}
+
+.square span:nth-child(2) {
+    position: absolute;
+    ;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 30% 62% 63% 90% /41% 44% 56% 59%;
+    animation: animate2 9s linear infinite;
+}
+
+.square:hover span:nth-child(2) {
+    background: rgb(223, 70, 70);
+    border: none;
+}
+
+.square span:nth-child(3) {
+    position: absolute;
+    ;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 30% 62% 63% 90% /41% 44% 56% 59%;
+    animation: animate 3s linear infinite;
+}
+
+.square:hover span:nth-child(3) {
+    background: rgb(214, 25, 25);
+    border: none;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.content {
+    position: relative;
+    padding: 20px 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    align-items: center;
+    opacity: 0.2;
+    z-index: 1000;
+}
+
+.content img {
+    width: 40%;
+    border-radius: 6em;
+    transition: 0.5s;
+}
+
+.content:hover {
+    opacity: 1;
+    color: white;
+}
+
+
+/* square 1........ */
+
+.square1 {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 100px 5% 30px 5%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.square1 span:nth-child(1) {
+    position: absolute;
+    ;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 30% 62% 63% 37% /41% 44% 56% 59%;
+    animation: animate 6s linear infinite;
+}
+
+.square1:hover span:nth-child(1) {
+    background: rgb(43, 220, 243);
+    border: none;
+}
+
+.square1 span:nth-child(2) {
+    position: absolute;
+    ;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 30% 62% 63% 37% /41% 44% 56% 59%;
+    animation: animate 9s linear infinite;
+}
+
+.square1:hover span:nth-child(2) {
+    background: rgb(53, 221, 233);
+    border: none;
+}
+
+.square1 span:nth-child(3) {
+    position: absolute;
+    ;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 30% 62% 63% 37% /41% 44% 56% 59%;
+    animation: animate2 3s linear infinite;
+}
+
+.square1:hover span:nth-child(3) {
+    background: rgb(7, 231, 231);
+    border: none;
+}
+
+
+/* ....................................square 3........ */
+
+.square3 {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 100px 10% 30px 5%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.square3 span:nth-child(1) {
+    position: absolute;
+    ;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 30% 62% 63% 37% /41% 44% 50% 60%;
+    animation: animate 6s linear infinite;
+}
+
+.square3:hover span:nth-child(1) {
+    background: rgb(228, 91, 209);
+    border: none;
+}
+
+.square3 span:nth-child(2) {
+    position: absolute;
+    ;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 30% 62% 63% 37% /41% 44% 56% 59%;
+    animation: animate 9s linear infinite;
+}
+
+.square3:hover span:nth-child(2) {
+    background: rgb(184, 49, 166);
+    border: none;
+}
+
+.square3 span:nth-child(3) {
+    position: absolute;
+    ;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 30% 62% 63% 37% /41% 44% 56% 59%;
+    animation: animate2 3s linear infinite;
+}
+
+.square3:hover span:nth-child(3) {
+    background: rgb(194, 22, 171);
+    border: none;
+}
+
+
+/* ///////////////////    video    //////////////////// */
+
+.noober {
+    width: 100%;
+}
+
+.noober h1 {
+    color: aqua;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 30px;
+    font-size: 60px;
+    margin: 20px 0 30px 0;
+    text-shadow: 1px 2px;
+}
+
+.noober span {
+    animation: noober 3s linear infinite;
+}
+
+@keyframes noober {
+    0% {
+        color: aqua;
+    }
+    25% {
+        color: black;
+    }
+    50% {
+        color: black;
+    }
+    100% {
+        color: aqua;
+    }
+}
+
+.video {
+    width: 100%;
+}
+
+.video iframe {
+    width: 20%;
+    padding: 10px 0 0 50px;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    display: none;
+    color: #000;
+    margin: 10% 5%;
+}
+
+.gllry {
+    width: 100%;
+    height: 30vh;
+    position: relative;
+    background: #000;
+    overflow: hidden;
+    object-fit: cover;
+    margin: 30px 0 0 0;
+}
+
+.gllry video {
+    position: absolute;
+    width: 100%;
+}
+
+.gllry h3 {
+    width: 100%;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    text-align: center;
+    mix-blend-mode: screen;
+    color: #000;
+    font-size: 10vw;
+}
+
+.nonee {
+    background: rgb(0, 0, 0);
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 200px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: auto;
+    background: #000;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0006);
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+
+/* ///////////////////    footer    ///////////////////// */
+
+.footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    height: 35px;
+    width: 35px;
+    background-color: white;
+    padding: 5px;
+    margin: 20px;
+    box-shadow: 3px 2px 5px 0.5px;
+    border-radius: 50px;
+    line-height: 45px;
+}
+
+a i {
+    color: red;
+    margin: 7px 7px;
+    transition: all 0.3s linear;
+}
+
+a:hover i {
+    transform: scale(1.4);
+}
+
+.youtube i {
+    margin: 0 2px;
+    padding: 0;
+}
+
+
+/*........................................................... MEDIA QUIRY BIGGEN  FROM HERE............................................................................*/
+
+@media only screen and (max-width:1000px) {
+    .startup {
+        display: none;
+    }
+    .border-dimention h1 {
+        display: block;
+    }
+}
+
+
+/* .....................at 600px........................ */
+
+@media only screen and (max-width:600px) {
+    .box {
+        height: 50vh;
+    }
+    .border-dimention h1 {
+        display: none;
+    }
+    .startup {
+        display: contents;
+    }
+    .box1 {
+        display: contents;
+    }
+    .box1 .box1-1 {
+        width: 80%;
+        height: auto;
+        margin: 30px 10% 0 10%;
+    }
+    .box1-1 p {
+        font-size: 20px;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+    .box1 .box1-2 {
+        width: 80%;
+        height: auto;
+        margin: 20px 10% 0 10%;
+    }
+    .box1-2 p {
+        font-size: 40px;
+        color: rgb(0, 0, 0);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+    .box1 .box1-3 {
+        width: 80%;
+        height: auto;
+        margin: 30px 10% 50px 10%;
+    }
+    .box1-3 p {
+        font-size: 60px;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 8px;
+    }
+    .card {
+        width: 100%;
+        height: auto;
+        padding: 5vh 0 6vh 0;
+        background-color: rgba(255, 251, 251, 0.952);
+        position: relative;
+    }
+    .inner-card {
+        width: 90%;
+        position: absolute;
+        margin: 2% 5% 5% 5%;
+        position: sticky;
+        box-shadow: 2px 5px 15px;
+        background-color: rgb(223, 223, 223);
+    }
+    .inner-card img {
+        width: 45%;
+        position: relative;
+    }
+    .inner-card p {
+        text-align: center;
+        margin: 15px 10px 2px 10px;
+        font-size: 19px;
+        color: black;
+    }
+    .coocoo {
+        width: 100%;
+        display: contents;
+    }
+    .square {
+        width: 360px;
+        height: 360px;
+        margin: 100px 10% 30px 12%;
+        justify-content: center;
+        align-items: center;
+    }
+    .square1 {
+        width: 360px;
+        height: 360px;
+        margin: 100px 10% 30px 12%;
+        justify-content: center;
+        align-items: center;
+    }
+    .square3 {
+        width: 360px;
+        height: 360px;
+        margin: 100px 10% 30px 12%;
+        justify-content: center;
+        align-items: center;
+    }
+    .video iframe {
+        width: 100%;
+        padding: 20px 0 20px 0;
+        ;
+    }
+    .content p {
+        font-size: 26px;
+        color: white;
+    }
+    .square1 h3 {
+        font-size: 30px;
+        padding: 20px
+    }
+    .gllry h3 {
+        font-size: 20vw;
+    }
+}
+
+
+/* ................at 500px............ */
+
+@media only screen and (max-width:500px) {
+    .box h3 {
+        font-size: 80px;
+    }
+    .box {
+        width: 100%;
+        height: 45vh;
+        position: relative;
+        overflow: hidden;
+        object-fit: cover;
+    }
+    .box h3 {
+        line-height: 40vh;
+    }
+    .box1 {
+        display: contents;
+    }
+    .card {
+        width: 100%;
+        height: auto;
+        max-height: 50vh;
+        padding: 5vh 2vh 5vh 0;
+        background-color: rgba(255, 251, 251, 0.952);
+    }
+    .inner-card {
+        width: 90%;
+        margin: 1% 15px 5% 15px;
+        display: flex;
+        box-shadow: 2px 5px 15px;
+        background-color: rgb(223, 223, 223);
+    }
+    .inner-card img {
+        width: 40%;
+        max-height: 45vh;
+    }
+    .inner-card p {
+        text-align: center;
+        margin: 10px 10px 10px 10px;
+        font-size: 15px;
+    }
+    .coocoo {
+        width: 100%;
+        display: contents;
+    }
+    .square {
+        width: 300px;
+        height: 300px;
+        margin: 100px 10% 30px 10%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .square1 {
+        width: 300px;
+        height: 300px;
+        margin: 100px 10% 30px 10%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .square3 {
+        width: 300px;
+        height: 300px;
+        margin: 100px 10% 30px 10%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .video iframe {
+        width: 100%;
+        padding: 10px 0 10px 0;
+        ;
+    }
+    .content p {
+        position: relative;
+        padding: 20px 20px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+
+/* 
+..................... 400PX/................ */
+
+@media only screen and (max-width:400px) {
+    .box h3 {
+        font-size: 70px;
+    }
+    .box {
+        width: 100%;
+        height: 40vh;
+        position: relative;
+        overflow: hidden;
+        object-fit: cover;
+    }
+    .box1 {
+        display: contents;
+    }
+    .box1-1 p {
+        font-size: 15px;
+    }
+    .box1-2 p {
+        font-size: 20px;
+    }
+    .box1-3 p {
+        font-size: 30px;
+    }
+    .card {
+        width: 100%;
+        height: auto;
+        padding: 5vh 0 5vh 0;
+        background-color: rgba(255, 251, 251, 0.952);
+    }
+    .inner-card {
+        width: 90%;
+        margin: 2% 5% 5% 5%;
+        display: flex;
+        box-shadow: 2px 5px 15px;
+        background-color: rgb(223, 223, 223);
+    }
+    .inner-card img {
+        width: 45%;
+    }
+    .inner-card p {
+        text-align: center;
+        margin: 10px 10px 10px 10px;
+        font-size: 12px;
+    }
+    .coocoo {
+        width: 100%;
+        display: contents;
+    }
+    .square {
+        width: 250px;
+        height: 250px;
+        margin: 100px 10% 30px 10%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .square1 {
+        width: 250px;
+        height: 250px;
+        margin: 100px 10% 30px 10%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .square3 {
+        width: 250px;
+        height: 250px;
+        margin: 100px 10% 30px 10%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .content p {
+        padding: 20px 20px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-size: 16px;
+    }
+    .content h3 {
+        margin: 0%;
+        padding: 0;
+    }
+    .gllry h3 {
+        font-size: 25vw;
+    }
+}
+
+@media only screen and (max-width:350px) {
+    .box h3 {
+        font-size: 70px;
+    }
+    .box1 {
+        display: contents;
+    }
+    .box {
+        width: 100%;
+        height: 40vh;
+        position: relative;
+        overflow: hidden;
+        object-fit: cover;
+    }
+    .coocoo {
+        width: 100%;
+        display: contents;
+    }
+    .square3 {
+        position: relative;
+        width: 220px;
+        height: 220px;
+        margin: 100px 0 30px 10%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .square1 {
+        position: relative;
+        width: 220px;
+        height: 220px;
+        margin: 100px 0 30px 10%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .square {
+        position: relative;
+        width: 220px;
+        height: 220px;
+        margin: 100px 0 30px 10%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .content {
+        position: relative;
+        padding: 20px 20px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-size: 12px;
+    }
+    .content img {
+        margin-top: 50px;
+        padding: 0;
+    }
+    .content h3 {
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+    }
+    .gllry {
+        height: 23vh;
+    }
+    .swiper-slide {
+        width: 250px;
+    }
+}
+
+
+/* 
+//////......../////////////////......... 300 p x ///........ */
+
+@media only screen and (max-width:300px) {
+    .box h3 {
+        font-size: 60px;
+    }
+    .box1 {
+        display: contents;
+    }
+    .content p {
+        position: relative;
+        padding: 5px 5px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+    .content h3 {
+        font-size: 15px;
+        align-items: center;
+    }
+    .content img {
+        margin-top: 20px;
+        align-items: center;
+    }
+    .noober h1 {
+        font-size: 35px;
+    }
+    .swiper-slide {
+        width: 200px;
+    }
+}
+
+
+/* ////////////     250    ////////////// */
+
+@media only screen and (max-width:250px) {
+    .box h3 {
+        font-size: 60px;
+    }
+    .box1 {
+        display: contents;
+    }
+    .square {
+        position: relative;
+        width: 170px;
+        height: 170px;
+        margin: 100px 0 30px 10%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .square1 {
+        position: relative;
+        width: 170px;
+        height: 170px;
+        margin: 100px 0 30px 10%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .square3 {
+        position: relative;
+        width: 170px;
+        height: 170px;
+        margin: 100px 0 30px 10%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .content p {
+        font-size: 13px;
+    }
+    .inner-card p {
+        text-align: center;
+        margin: 10px 10px 10px 10px;
+        font-size: 7px;
+    }
+    .gllry {
+        height: 15vh;
+    }
+    .swiper-slide {
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width:200px) {
+    .startup {
+        display: none;
+    }
+    .border-dimention h1 {
+        display: contents;
+    }
+}
